@@ -18,4 +18,4 @@
  *
  * @author Aleksandr Selivanov <alexgearbox@gmail.com>
  */
-$lang['enabled'] = 'Включить или отключить снег'
+$lang['enabled'] = 'Включить или отключить снег';
