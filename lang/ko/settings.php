@@ -17,4 +17,6 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
  * @author  Mark C. Prins <mprins@users.sf.net>
+ * @author  Myeongjin <aranet100@gmail.com>
  */
+$lang['enabled'] = '눈을 활성화하거나 비활성화';
