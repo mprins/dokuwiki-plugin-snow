@@ -17,4 +17,6 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
  * @author  Mark C. Prins <mprins@users.sf.net>
+ * @author João Lopes <joao@ribeirolopes.org>
  */
+$lang['enabled']               = 'Activar ou desactivar a neve';
