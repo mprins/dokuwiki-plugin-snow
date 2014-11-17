@@ -1,8 +1,8 @@
 <?php
 /**
- * language file for snow plugin
+ * language file for snow plugin.
  *
- * Copyright (c) 2013 Mark C. Prins <mprins@users.sf.net>
+ * Copyright (c) 2013-2014 Mark C. Prins <mprins@users.sf.net>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -17,4 +17,6 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
  * @author  Mark C. Prins <mprins@users.sf.net>
+ * @author HL <tohelong@gmail.com>
  */
+ $lang['enabled'] = '启用或禁用雪';
