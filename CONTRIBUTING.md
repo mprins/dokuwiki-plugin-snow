@@ -8,3 +8,5 @@ which has been provided under the BSD license, the code for this plugin is provi
 Also note that in providing a contribution you will provide the author of this plugin free use 
 and copyright of your contribution and the right to distribute your contribution unde the same terms as the rest 
 of the plugin's code.
+
+Removing the copyright notice will result in your pull request being rejected.
