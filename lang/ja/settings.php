@@ -2,7 +2,7 @@
 /**
  * language file for snow plugin
  *
- * Copyright (c) 2013 Mark C. Prins <mprins@users.sf.net>
+ * Copyright (c) 2013-2015 Mark C. Prins <mprins@users.sf.net>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -17,4 +17,6 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
  * @author  Mark C. Prins <mprins@users.sf.net>
+ * @author Hideaki SAWADA <chuno@live.jp>
  */
+$lang['enabled'] = 'Snow の有効化／無効化';
