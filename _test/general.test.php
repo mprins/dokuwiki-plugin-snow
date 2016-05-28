@@ -16,14 +16,14 @@
  */
 
 /**
- * General tests for the webmaster plugin
+ * General tests for the snow plugin
  *
  * @group plugin_snow
  * @group plugins
  */
 class general_plugin_snow_test extends DokuWikiTest {
 
-    protected $pluginsEnabled = array('backlinks');
+    protected $pluginsEnabled = array('snow');
 
     /**
      * Simple test to make sure the plugin.info.txt is in correct format
@@ -52,7 +52,7 @@ class general_plugin_snow_test extends DokuWikiTest {
     /**
      * test if plugin is loaded.
      */
-    public function test_plugin_backlinks_isloaded() {
+    public function test_plugin_snow_isloaded() {
         global $plugin_controller;
         $this->assertTrue(
                    in_array('snow', $plugin_controller->getList()),
