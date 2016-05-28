@@ -19,7 +19,8 @@ This project includes part of Snowstorm [https://github.com/scottschiller/Snowst
 
 
 ----
-  Copyright (c) 2012-2014 Mark C. Prins <mprins@users.sf.net>
+```
+  Copyright (c) 2012-2016 Mark C. Prins <mprins@users.sf.net>
 
   Permission to use, copy, modify, and distribute this software for any
   purpose with or without fee is hereby granted, provided that the above
@@ -32,10 +33,11 @@ This project includes part of Snowstorm [https://github.com/scottschiller/Snowst
   WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
   ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
   OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-
+```
 ---
-Snowstorm license
 
+Snowstorm license
+```
 Software License Agreement (BSD License)
 
 Copyright (c) 2003, Scott Schiller (schillmania.com)
@@ -65,3 +67,4 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
 ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+```
