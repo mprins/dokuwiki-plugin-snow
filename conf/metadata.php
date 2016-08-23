@@ -18,4 +18,4 @@
  *
  * @author  Mark C. Prins <mprins@users.sf.net>
  */
-$meta['enabled'] = array ('onoff');
+$meta['enabled'] = array('onoff');

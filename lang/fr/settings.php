@@ -18,4 +18,4 @@
  *
  * @author  Mark C. Prins <mprins@users.sf.net>
  */
- $lang['enabled'] = 'Activer ou désactiver la neige';
+$lang['enabled'] = 'Activer ou désactiver la neige';
