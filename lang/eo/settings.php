@@ -19,4 +19,4 @@
  * @author  Mark C. Prins <mprins@users.sf.net>
  * @author Robert Bogenschneider <bogi@uea.org>
  */
-$lang['enabled']               = 'En- aŭ elŝalti neĝon';
+$lang['enabled'] = 'En- aŭ elŝalti neĝon';
