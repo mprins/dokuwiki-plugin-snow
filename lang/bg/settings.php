@@ -19,4 +19,4 @@
  * @author  Mark C. Prins <mprins@users.sf.net>
  * @author  Kiril <neohidra@gmail.com>
  */
- $lang['enabled']               = 'Включване на снеговалежа';
+$lang['enabled'] = 'Включване на снеговалежа';
