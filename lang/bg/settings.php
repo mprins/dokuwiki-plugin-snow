@@ -17,4 +17,6 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
  * @author  Mark C. Prins <mprins@users.sf.net>
+ * @author  Kiril <neohidra@gmail.com>
  */
+ $lang['enabled']               = 'Включване на снеговалежа';
