@@ -2,7 +2,7 @@
 /**
  * language file for snow plugin
  *
- * Copyright (c) 2013 Mark C. Prins <mprins@users.sf.net>
+ * Copyright (c) 2016 Mark C. Prins <mprins@users.sf.net>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -16,5 +16,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
- * @author  Mark C. Prins <mprins@users.sf.net>
+ * @author Mark C. Prins <mprins@users.sf.net>
+ * @author Arne Hanssen <arne.hanssen@getmail.no>
  */
+$lang['enabled'] = 'Slå på, eller slå av snø';
