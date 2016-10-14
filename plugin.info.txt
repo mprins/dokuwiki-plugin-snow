@@ -1,7 +1,7 @@
 base   snow
 author Mark C. Prins
 email  mprins@users.sf.net
-date   2016-08-23
+date   2016-10-14
 name   Snow plugin
 desc   Makes snow on your wiki
 url    http://dokuwiki.org/plugin:snow
