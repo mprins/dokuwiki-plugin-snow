@@ -1,11 +1,9 @@
 <?php
 
 /**
- * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
+ * Swedish language file for snow plugin.
  *
- * language file for snow plugin
- *
- * Copyright (c) 2013 Mark C. Prins <mprins@users.sf.net>
+ * Copyright (c) 2013-2017 Mark C. Prins <mprins@users.sf.net>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -22,4 +20,4 @@
  * @author Tor Härnqvist <tor@harnqvist.se>
  * @author Mark C. Prins <mprins@users.sf.net>
  */
-$lang['enabled']               = 'Aktivera eller avaktivera visning';
+$lang['enabled'] = 'Aktivera eller avaktivera visning';
