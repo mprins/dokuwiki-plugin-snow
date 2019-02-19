@@ -1,4 +1,3 @@
-dist: xenial
 language: php
 
 php:
@@ -8,25 +7,26 @@ php:
   - "7.0"
   - "5.6"
 
-# matrix:
-#  allow_failures:
-
+matrix:
+  fast_finish: true
+  allow_failures:
+  - php: "7.0"
 
 env:
   - DOKUWIKI=master
   - DOKUWIKI=stable
 
 before_install:
+  - phpunit --version
   - wget https://raw.github.com/splitbrain/dokuwiki-travis/master/travis.sh
 
 install:
   - sh travis.sh
   # Force PHPUnit 7 
-  - if [[ $TRAVIS_PHP_VERSION > '7.1' ]]; then wget -O ~/.phpenv/versions/$(phpenv version-name)/bin/phpunit https://phar.phpunit.de/phpunit-7.phar; fi
+  - if [[ $TRAVIS_PHP_VERSION > '7.1' ]]; then wget -v -O ~/.phpenv/versions/$(phpenv version-name)/bin/phpunit https://phar.phpunit.de/phpunit-7.phar; fi
   - if [[ $TRAVIS_PHP_VERSION > '7.1' ]]; then chmod 755 ~/.phpenv/versions/$(phpenv version-name)/bin/phpunit; fi
 
 before_script:
-  - test -z "$DISABLE_FUNCTIONS" || echo "disable_functions=$DISABLE_FUNCTIONS" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
   - phpunit --version
 
 script:
