@@ -1,5 +1,4 @@
 <?php
-
 /**
  * language file for snow plugin
  *
