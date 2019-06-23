@@ -20,4 +20,4 @@
  * @author Alexandre Belchior <alexbelchior@gmail.com>
  * @author Mark C. Prins <mprins@users.sf.net>
  */
-$lang['enabled']               = 'Habilitar ou desabilitar snow';
+$lang['enabled'] = 'Habilitar ou desabilitar snow';
