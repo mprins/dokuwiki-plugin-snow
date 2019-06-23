@@ -19,4 +19,4 @@
  * @author Kalle Sommer Nielsen <kalle@php.net>
  * @author Mark C. Prins <mprins@users.sf.net>
  */
-$lang['enabled']               = 'Aktiver eller deaktiver sne';
+$lang['enabled'] = 'Aktiver eller deaktiver sne';
