@@ -16,5 +16,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
- * @author  Mark C. Prins <mprins@users.sf.net>
+ * @author Kalle Sommer Nielsen <kalle@php.net>
+ * @author Mark C. Prins <mprins@users.sf.net>
  */
+$lang['enabled']               = 'Aktiver eller deaktiver sne';
