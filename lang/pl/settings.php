@@ -1,6 +1,7 @@
 <?php
+
 /**
- * language file for snow plugin
+ * language file for snow plugin.
  *
  * Copyright (c) 2013 Mark C. Prins <mprins@users.sf.net>
  *
@@ -16,5 +17,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
- * @author  Mark C. Prins <mprins@users.sf.net>
+ * @author Bartek S <sadupl@gmail.com>
+ * @author Mark C. Prins <mprins@users.sf.net>
  */
+$lang['enabled']               = 'Włącz lub wyłącz śnieg';
