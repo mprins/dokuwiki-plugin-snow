@@ -21,4 +21,4 @@ before_script:
   - ./_test/phpunit.phar --version
 
 script:
-  - cd _test && PRESERVE_TMP=false ./phpunit.phar --stderr 
+  - cd _test && PRESERVE_TMP=false ./phpunit.phar --stderr --group plugin_snow --verbose --debug
