@@ -19,3 +19,15 @@
  * @author  Mark C. Prins <mprins@users.sf.net>
  */
 $conf['enabled'] = 1;
+$conf['zindex'] = 0;
+$conf['color'] = '#fff';
+$conf['excludemobile'] = 1;
+$conf['flakesmax'] = 128;
+$conf['flakesmaxactive'] = 64;
+$conf['animationinterval'] = 33;
+$conf['usegpu'] = 1;
+$conf['followmouse'] = 1;
+$conf['snowstick'] = 1;
+$conf['usemelteffect'] = 0;
+$conf['usetwinkleeffect'] = 0;
+$conf['freezeonblur'] = 1;
