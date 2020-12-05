@@ -29,16 +29,24 @@ require_once DOKU_PLUGIN.'action.php';
 class action_plugin_snow extends DokuWiki_Action_Plugin {
 
     public function register(Doku_Event_Handler $controller) {
-        $controller->register_hook('TPL_METAHEADER_OUTPUT', 'BEFORE', $this, 'handle_tpl_metaheader_output');
+        $controller->register_hook('DOKUWIKI_STARTED', 'AFTER', $this, 'add_jsinfo_information');
     }
 
-    public function handle_tpl_metaheader_output(Doku_Event $event, $param) {
-        if ($this->getConf('enabled')) {
-            $event->data["script"][] = array(
-                "type" => "text/javascript",
-                "src" => DOKU_BASE."lib/plugins/snow/snowstorm-min.js",
-                "_data" => "",
-            );
-        }
+    function add_jsinfo_information(&$event, $param) {
+        global $JSINFO;
+
+        $JSINFO['plugin']['snow']['enabled'] = $this->getConf('enabled');
+        $JSINFO['plugin']['snow']['zindex'] = $this->getConf('zindex');
+        $JSINFO['plugin']['snow']['color'] = $this->getConf('color');
+        $JSINFO['plugin']['snow']['excludemobile'] = $this->getConf('excludemobile');
+        $JSINFO['plugin']['snow']['flakesmax'] = $this->getConf('flakesmax');
+        $JSINFO['plugin']['snow']['flakesmaxactive'] = $this->getConf('flakesmaxactive');
+        $JSINFO['plugin']['snow']['animationinterval'] = $this->getConf('animationinterval');
+        $JSINFO['plugin']['snow']['usegpu'] = $this->getConf('usegpu');
+        $JSINFO['plugin']['snow']['followmouse'] = $this->getConf('followmouse');
+        $JSINFO['plugin']['snow']['snowstick'] = $this->getConf('snowstick');
+        $JSINFO['plugin']['snow']['usemelteffect'] = $this->getConf('usemelteffect');
+        $JSINFO['plugin']['snow']['usetwinkleeffect'] = $this->getConf('usetwinkleeffect');
+        $JSINFO['plugin']['snow']['freezeonblur'] = $this->getConf('freezeonblur');
     }
 }

@@ -19,3 +19,15 @@
  * @author  Mark C. Prins <mprins@users.sf.net>
  */
 $meta['enabled'] = array('onoff');
+$meta['zindex'] = array('numeric');
+$meta['color'] = array('string');
+$meta['excludemobile'] = array('onoff');
+$meta['flakesmax'] = array('numeric');
+$meta['flakesmaxactive'] = array('numeric');
+$meta['animationinterval'] = array('numeric');
+$meta['usegpu'] = array('onoff');
+$meta['followmouse'] = array('onoff');
+$meta['snowstick'] = array('onoff');
+$meta['usemelteffect'] = array('onoff');
+$meta['usetwinkleeffect'] = array('onoff');
+$meta['freezeonblur'] = array('onoff');

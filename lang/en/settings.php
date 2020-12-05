@@ -19,3 +19,15 @@
  * @author  Mark C. Prins <mprins@users.sf.net>
  */
 $lang['enabled'] = 'Enable or disable snow';
+$lang['zindex'] = 'CSS stacking order applied to each snowflake';
+$lang['color'] = 'Don\'t eat (or use?) yellow snow.';
+$lang['excludemobile'] = 'Snow is likely to be bad news for mobile phones\' CPUs (and batteries.) Enable at your own risk.';
+$lang['flakesmax'] = 'Limit total amount of snow made (falling + sticking)';
+$lang['flakesmaxactive'] = 'Limit amount of snow falling at once (less = lower CPU use)';
+$lang['animationinterval'] = 'Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower';
+$lang['usegpu'] = 'Enable transform-based hardware acceleration, reduce CPU load.';
+$lang['followmouse'] = 'Snow movement can respond to the user\'s mouse';
+$lang['snowstick'] = 'Whether or not snow should "stick" at the bottom. When off, will never collect.';
+$lang['usemelteffect'] = 'When recycling fallen snow (or rarely, when falling), have it "melt" and fade out if browser supports it';
+$lang['usetwinkleeffect'] = 'Allow snow to randomly "flicker" in and out of view while falling';
+$lang['freezeonblur'] = 'Only snow when the window is in focus (foreground.) Saves CPU.';
