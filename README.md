@@ -10,7 +10,7 @@ Please refer to http://www.dokuwiki.org/plugins for additional info on how to in
 
 This project includes part of Snowstorm [https://github.com/scottschiller/Snowstorm].
 
-[![Build Status](https://travis-ci.com/mprins/dokuwiki-plugin-snow.svg?branch=master)](https://travis-ci.com/mprins/dokuwiki-plugin-snow)
+[![CI](https://github.com/mprins/dokuwiki-plugin-snow/actions/workflows/CI.yml/badge.svg)](https://github.com/mprins/dokuwiki-plugin-snow/actions/workflows/CI.yml)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mprins/dokuwiki-plugin-snow/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mprins/dokuwiki-plugin-snow/?branch=master)
 [![GitHub issues](https://img.shields.io/github/issues/mprins/dokuwiki-plugin-snow.svg)](https://github.com/mprins/dokuwiki-plugin-snow/issues)
 [![GitHub forks](https://img.shields.io/github/forks/mprins/dokuwiki-plugin-snow.svg)](https://github.com/mprins/dokuwiki-plugin-snow/network)
