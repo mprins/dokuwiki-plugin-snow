@@ -16,23 +16,17 @@
  *
  * @author  Mark C. Prins <mprins@users.sf.net>
  */
-if (!defined('DOKU_INC')) {
-    die();
-}
-if (!defined('DOKU_PLUGIN')) {
-    define('DOKU_PLUGIN', DOKU_INC.'lib/plugins/');
-}
-require_once DOKU_PLUGIN.'action.php';
+
 /**
  * DokuWiki Plugin snow (Action Component).
  */
 class action_plugin_snow extends DokuWiki_Action_Plugin {
 
-    public function register(Doku_Event_Handler $controller) {
-        $controller->register_hook('DOKUWIKI_STARTED', 'AFTER', $this, 'add_jsinfo_information');
+    public function register(Doku_Event_Handler $controller): void {
+        $controller->register_hook('DOKUWIKI_STARTED', 'AFTER', $this, 'addJsinfoInformation');
     }
 
-    function add_jsinfo_information(&$event, $param) {
+    public function addJsinfoInformation(&$event, $param): void {
         global $JSINFO;
 
         $JSINFO['plugin']['snow']['enabled'] = $this->getConf('enabled');
