@@ -1,5 +1,8 @@
 <?php
+
 /**
+ * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
+ *
  * language file for snow plugin
  *
  * Copyright (c) 2013 Mark C. Prins <mprins@users.sf.net>
@@ -16,5 +19,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
- * @author  Mark C. Prins <mprins@users.sf.net>
+ * @author Minh <phandinhminh@protonmail.ch>
+ * @author Mark C. Prins <mprins@users.sf.net>
  */
+$lang['enabled']               = 'Bật hoặc tắt tuyết';
