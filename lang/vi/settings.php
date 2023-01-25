@@ -1,7 +1,5 @@
 <?php
-
 /**
- *
  * language file for snow plugin.
  *
  * Copyright (c) 2013 Mark C. Prins <mprins@users.sf.net>
