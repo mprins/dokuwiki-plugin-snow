@@ -1,7 +1,6 @@
 <?php
 
 /**
- * @license    GPL 2 (https://www.gnu.org/licenses/gpl.html)
  *
  * language file for snow plugin.
  *
