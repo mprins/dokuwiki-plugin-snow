@@ -2,11 +2,11 @@
 
 Makes it snow on your wiki.
 
-All documentation for this plugin can be found at: http://dokuwiki.org/plugin:snow
+All documentation for this plugin can be found at: https://dokuwiki.org/plugin:snow
 
 If you install this plugin manually, make sure it is installed in lib/plugins/snow/ - if the folder is called different it will not work!
 
-Please refer to http://www.dokuwiki.org/plugins for additional info on how to install plugins in DokuWiki.
+Please refer to https://www.dokuwiki.org/plugins for additional info on how to install plugins in DokuWiki.
 
 This project includes part of Snowstorm [https://github.com/scottschiller/Snowstorm].
 

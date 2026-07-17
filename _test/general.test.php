@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Copyright (c) 2016 Mark C. Prins <mprins@users.sf.net>
  *
@@ -14,6 +15,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+use dokuwiki\MailUtils;
 
 /**
  * General tests for the snow plugin
@@ -43,9 +45,9 @@ class general_plugin_snow_test extends DokuWikiTest {
         $this->assertArrayHasKey('url', $info);
 
         $this->assertEquals('snow', $info['base']);
-        $this->assertRegExp('/^https?:\/\//', $info['url']);
-        $this->assertTrue(mail_isvalid($info['email']));
-        $this->assertRegExp('/^\d\d\d\d-\d\d-\d\d$/', $info['date']);
+        $this->assertMatchesRegularExpression('/^https?:\/\//', $info['url']);
+        $this->assertTrue(MailUtils::isValid($info['email']));
+        $this->assertMatchesRegularExpression('/^\d\d\d\d-\d\d-\d\d$/', $info['date']);
         $this->assertTrue(false !== strtotime($info['date']));
     }
 
@@ -54,9 +56,6 @@ class general_plugin_snow_test extends DokuWikiTest {
      */
     public function test_plugin_snow_isloaded(): void {
         global $plugin_controller;
-        $this->assertTrue(
-                    in_array('snow', $plugin_controller->getList()),
-                    "snow plugin is loaded"
-                            );
+        $this->assertTrue(in_array('snow', $plugin_controller->getList()), "snow plugin is loaded");
     }
 }

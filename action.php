@@ -1,6 +1,7 @@
 <?php
+
 /*
- * Copyright (c) 2012-2016 Mark C. Prins <mprins@users.sf.net>
+ * Copyright (c) 2012-2026 Mark C. Prins <mprins@users.sf.net>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -15,18 +16,23 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
  * @author  Mark C. Prins <mprins@users.sf.net>
+ *
+ * @phpcs:disable Squiz.Classes.ValidClassName.NotPascalCase
  */
 
 /**
  * DokuWiki Plugin snow (Action Component).
  */
-class action_plugin_snow extends DokuWiki_Action_Plugin {
 
-    public function register(Doku_Event_Handler $controller): void {
+class action_plugin_snow extends DokuWiki_Action_Plugin
+{
+    public function register(Doku_Event_Handler $controller): void
+    {
         $controller->register_hook('DOKUWIKI_STARTED', 'AFTER', $this, 'addJsinfoInformation');
     }
 
-    public function addJsinfoInformation(&$event, $param): void {
+    public function addJsinfoInformation(): void
+    {
         global $JSINFO;
 
         $JSINFO['plugin']['snow']['enabled'] = $this->getConf('enabled');

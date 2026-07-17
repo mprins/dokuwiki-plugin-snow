@@ -1,8 +1,9 @@
 <?php
+
 /**
  * Options for the snow plugin
  *
- * Copyright (c) 2012-2013 Mark C. Prins <mprins@users.sf.net>
+ * Copyright (c) 2012-2026 Mark C. Prins <mprins@users.sf.net>
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -18,6 +19,7 @@
  *
  * @author  Mark C. Prins <mprins@users.sf.net>
  */
+
 $meta['enabled'] = array('onoff');
 $meta['zindex'] = array('numeric');
 $meta['color'] = array('string');

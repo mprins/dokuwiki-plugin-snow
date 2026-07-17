@@ -1,30 +1,32 @@
 name: PHP Code Style
 
-on: [push, pull_request]
+on: [ pull_request ]
 
 jobs:
-    phpcs:
-        name: PHP CodeSniffer
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
+  phpcs:
+    name: PHP CodeSniffer
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-            - name: Setup PHP
-              uses: shivammathur/setup-php@v2
-              with:
-                php-version: '7.4'
-                tools: cs2pr, phpcs
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: cs2pr, phpcs
 
-            - name: retrieve script
-              run: wget https://raw.github.com/splitbrain/dokuwiki-travis/master/travis.sh
+      - name: retrieve script
+        run: wget https://raw.github.com/splitbrain/dokuwiki-travis/master/travis.sh
 
-            - name: Install DokuWiki
-              env:
-                  CI_SERVER: 1
-                  DOKUWIKI : master
-              run: sh travis.sh
+      - name: Install DokuWiki
+        env:
+          CI_SERVER: 1
+          DOKUWIKI: master
+        run: sh travis.sh
 
-#            - name: run PHP codesniffer
-#              run: php phpcs -v --runtime-set ignore_warnings_on_exit true --standard=_test/phpcs.xml lib/plugins/snow
-            - name: run PHP codesniffer
-              run: phpcs -q --standard=_test/phpcs_MigrationAdjustments.xml --report=checkstyle --runtime-set ignore_warnings_on_exit lib/plugins/snow | cs2pr
+      - name: run PHP codesniffer
+        continue-on-error: true
+        run: phpcs -v --standard=_test/phpcs_MigrationAdjustments.xml --report-full --report-checkstyle=./phpcs-report.xml lib/plugins/snow
+
+      - name: Annotate PR
+        run: cs2pr ./phpcs-report.xml
